@@ -112,23 +112,23 @@ namespace AltController.Sys
             {
                 INPUT[] inputs = new INPUT[1];
                 inputs[0].type = WindowsAPI.INPUT_KEYBOARD;
-                inputs[0].ki.dwFlags = keyDown ? 0u : WindowsAPI.KEYEVENTF_KEYUP;
+                inputs[0].ci.ki.dwFlags = keyDown ? 0u : WindowsAPI.KEYEVENTF_KEYUP;
                 if (_useScanCodes && vk.WindowsScanCode != 0)
                 {
                     // Use scan code
-                    inputs[0].ki.dwFlags |= WindowsAPI.KEYEVENTF_SCANCODE;
-                    inputs[0].ki.wScan = vk.WindowsScanCode;
+                    inputs[0].ci.ki.dwFlags |= WindowsAPI.KEYEVENTF_SCANCODE;
+                    inputs[0].ci.ki.wScan = vk.WindowsScanCode;
 
                     // Extended key flag
                     if (_isExtendedKey[(byte)vk.KeyCode])
                     {
-                        inputs[0].ki.dwFlags |= WindowsAPI.KEYEVENTF_EXTENDEDKEY;
+                        inputs[0].ci.ki.dwFlags |= WindowsAPI.KEYEVENTF_EXTENDEDKEY;
                     }
                 }
                 else
                 {
                     // Use virtual key code (scan code zero indicates vk must be used)
-                    inputs[0].ki.wVk = (ushort)vk.KeyCode;
+                    inputs[0].ci.ki.wVk = (ushort)vk.KeyCode;
                 }
 
                 WindowsAPI.SendInput(1, inputs, System.Runtime.InteropServices.Marshal.SizeOf(inputs[0]));
@@ -198,12 +198,12 @@ namespace AltController.Sys
             foreach (char ch in textToType)
             {
                 inputs[i].type = WindowsAPI.INPUT_KEYBOARD;
-                inputs[i].ki.dwFlags = WindowsAPI.KEYEVENTF_UNICODE;
-                inputs[i].ki.wScan = ch;
+                inputs[i].ci.ki.dwFlags = WindowsAPI.KEYEVENTF_UNICODE;
+                inputs[i].ci.ki.wScan = ch;
                 i++;
                 inputs[i].type = WindowsAPI.INPUT_KEYBOARD;
-                inputs[i].ki.dwFlags = WindowsAPI.KEYEVENTF_UNICODE | WindowsAPI.KEYEVENTF_KEYUP;
-                inputs[i].ki.wScan = ch;
+                inputs[i].ci.ki.dwFlags = WindowsAPI.KEYEVENTF_UNICODE | WindowsAPI.KEYEVENTF_KEYUP;
+                inputs[i].ci.ki.wScan = ch;
                 i++;
             }
             WindowsAPI.SendInput((uint)inputs.Length, inputs, System.Runtime.InteropServices.Marshal.SizeOf(inputs[0]));
