@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltController", "AltController\AltController.csproj", "{A835F483-FA6A-43A5-90AC-15E8AADAC739}"
 EndProject
@@ -32,6 +32,7 @@ Global
 		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6812A86-FD7F-4932-A5D3-D6E2BB33B243}.Release|Any CPU.Build.0 = Release|Any CPU
