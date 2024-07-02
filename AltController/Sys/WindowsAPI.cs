@@ -307,7 +307,7 @@ namespace AltController.Sys
     //fix bug causing inputs to not be detected in 64bit mode 
     //https://stackoverflow.com/questions/6830651/sendinput-and-64bits
     [StructLayout(LayoutKind.Explicit)]
-    public struct ControlInput
+    public struct CONTROLINPUT
     {
         [FieldOffset(0)]
         public int type;
@@ -323,7 +323,7 @@ namespace AltController.Sys
     public struct INPUT
     {
         public uint type;
-        public ControlInput ci;
+        public CONTROLINPUT ci;
     }
 
     [StructLayout(LayoutKind.Sequential)]
