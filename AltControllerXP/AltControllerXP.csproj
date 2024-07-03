@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+	<ItemGroup>
+	<ItemGroup>
+		<Folder Include="Assets\" />
+	</ItemGroup>
+
 </Project>
