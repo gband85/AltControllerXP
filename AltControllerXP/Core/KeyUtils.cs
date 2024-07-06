@@ -33,9 +33,9 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Globalization;
 //using System.Diagnostics;
-using AltController.Sys;
+using AltControllerXP.Sys;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Keyboard-related utility methods

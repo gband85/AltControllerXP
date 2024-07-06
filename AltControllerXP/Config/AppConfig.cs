@@ -32,9 +32,9 @@ using System.Collections.Generic;
 using System.Xml;
 using System.IO;
 using System.Text;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Stores application-wide config settings

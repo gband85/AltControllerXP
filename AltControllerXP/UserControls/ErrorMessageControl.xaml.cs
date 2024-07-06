@@ -31,10 +31,10 @@ using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using AltController.Core;
-using AltController.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     /// <summary>
     /// Interaction logic for ErrorMessageControl.xaml

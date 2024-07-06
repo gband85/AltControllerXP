@@ -32,10 +32,10 @@ using System.Xml;
 using System.IO;
 using System.Text;
 using System.Reflection;
-using AltController.Core;
-using AltController.Input;
+using AltControllerXP.Core;
+using AltControllerXP.Input;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Configuration profile that maps input sources and controls to actions,

@@ -28,9 +28,9 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
 using System.Xml;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     public class ScreenRegionList : NamedItemList
     {

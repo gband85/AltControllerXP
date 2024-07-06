@@ -32,10 +32,10 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Diagnostics;
-using AltController.Core;
-using AltController.Sys;
+using AltControllerXP.Core;
+using AltControllerXP.Sys;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Edit situations window

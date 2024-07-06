@@ -29,10 +29,10 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Windows.Forms;
 using System.Xml;
-using AltController.Core;
-using AltController.Event;
-using AltController.Sys;
-namespace AltController.Actions
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Sys;
+namespace AltControllerXP.Actions
 {
     /// <summary>
     /// Action for typing a keyboard key or key combination

@@ -28,9 +28,9 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Windows;
 using System.Windows.Controls;
-using AltController.Actions;
+using AltControllerXP.Actions;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     public partial class RepeatScrollControl : UserControl
     {

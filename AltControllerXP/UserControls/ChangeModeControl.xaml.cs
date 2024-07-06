@@ -28,10 +28,10 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Windows;
 using System.Windows.Controls;
-using AltController.Core;
-using AltController.Actions;
+using AltControllerXP.Core;
+using AltControllerXP.Actions;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     public partial class ChangeModeControl : UserControl
     {

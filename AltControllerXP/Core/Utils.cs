@@ -29,7 +29,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Text;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// General utility methods

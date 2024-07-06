@@ -31,12 +31,12 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using AltController.Core;
-using AltController.Config;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
 using System.Windows.Media.Imaging;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Edit screen regions window

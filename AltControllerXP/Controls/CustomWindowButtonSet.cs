@@ -28,12 +28,12 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
 using System.Collections.Generic;
-using AltController.Core;
-using AltController.Config;
-using AltController.Input;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Input;
+using AltControllerXP.Event;
 
-namespace AltController.Controls
+namespace AltControllerXP.Controls
 {
     public class CustomWindowButtonSet : BaseControl
     {

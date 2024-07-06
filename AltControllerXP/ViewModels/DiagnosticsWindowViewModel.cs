@@ -32,11 +32,11 @@ using System.Windows;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using System.IO;
-using AltController.Config;
-using AltController.Core;
-using AltController.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Diagnostics window

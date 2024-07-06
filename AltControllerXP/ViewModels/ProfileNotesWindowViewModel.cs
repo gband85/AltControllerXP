@@ -28,7 +28,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Windows;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Window that shows a notes for the current profile

@@ -28,7 +28,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Xml;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Data describing a program defined in the Apps section of the Edit Situations window.

@@ -34,10 +34,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using AltController.Config;
-using AltController.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     /// <summary>
     /// Control for displaying screen regions

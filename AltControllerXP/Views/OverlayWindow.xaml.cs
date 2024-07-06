@@ -31,11 +31,11 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using AltController.Core;
-using AltController.Config;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
 
-namespace AltControllerX.Views
+namespace AltControllerXP.Views
 {
     /// <summary>
     /// Invisible window that superimposes screen regions over the desktop / working area / active window

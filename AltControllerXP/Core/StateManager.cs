@@ -30,12 +30,12 @@ using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Threading;
-using AltController.Sys;
-using AltController.Config;
-using AltController.Event;
-using AltController.Input;
+using AltControllerXP.Sys;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Monitors the input sources and maps them to actions

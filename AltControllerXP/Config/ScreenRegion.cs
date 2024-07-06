@@ -31,9 +31,9 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
 using System.Xml;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Defines a region of the screen

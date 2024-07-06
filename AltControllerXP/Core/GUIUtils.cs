@@ -31,11 +31,11 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using AltController.Config;
-using AltController.Event;
-using AltController.Input;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// GUI utility methods

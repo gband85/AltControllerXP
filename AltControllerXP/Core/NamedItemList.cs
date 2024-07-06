@@ -28,7 +28,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.ObjectModel;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     public class NamedItemList : ObservableCollection<NamedItem>
     {

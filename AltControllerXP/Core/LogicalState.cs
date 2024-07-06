@@ -28,7 +28,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Xml;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Represents the logical state of the application

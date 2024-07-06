@@ -26,7 +26,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Represents a parameter value used to exchange data between events and actions

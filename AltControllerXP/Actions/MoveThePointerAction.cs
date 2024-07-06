@@ -30,10 +30,10 @@ using System;
 using System.Xml;
 using System.Windows;
 using System.Windows.Forms;
-using AltController.Core;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
 
-namespace AltController.Actions
+namespace AltControllerXP.Actions
 {
     /// <summary>
     /// Move the mouse pointer

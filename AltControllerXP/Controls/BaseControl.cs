@@ -27,12 +27,12 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
-using AltController.Config;
-using AltController.Core;
-using AltController.Input;
-using AltController.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Input;
+using AltControllerXP.Event;
 
-namespace AltController.Controls
+namespace AltControllerXP.Controls
 {
     /// <summary>
     /// Base class for input controls

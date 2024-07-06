@@ -32,11 +32,11 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Data;
-using AltController.Actions;
-using AltController.Config;
-using AltController.Core;
+using AltControllerXP.Actions;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Window that shows a summary of the current profile

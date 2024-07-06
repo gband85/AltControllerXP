@@ -27,10 +27,10 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Xml;
-using AltController.Core;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
 
-namespace AltController.Actions
+namespace AltControllerXP.Actions
 {
     /// <summary>
     /// Action for changing logical page

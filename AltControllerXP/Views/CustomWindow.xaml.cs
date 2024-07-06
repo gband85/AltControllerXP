@@ -31,7 +31,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
 
-namespace AltControllerX.Views
+namespace AltControllerXP.Views
 {
     /// <summary>
     /// Window containing custom buttons that can perform actions

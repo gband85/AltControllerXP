@@ -27,11 +27,11 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
-using AltController.Core;
-using AltController.Event;
-using AltController.Controls;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Controls;
 
-namespace AltController.Input
+namespace AltControllerXP.Input
 {
     public class KeyboardSource : BaseSource
     {

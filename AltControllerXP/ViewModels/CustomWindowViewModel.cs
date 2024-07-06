@@ -30,13 +30,13 @@ using System;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
-using AltController.Core;
-using AltController.Event;
-using AltController.Input;
-using AltController.Sys;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
+using AltControllerXP.Sys;
 //using System.Diagnostics;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Window containing custom buttons that can perform actions

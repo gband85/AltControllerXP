@@ -28,11 +28,11 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
 using System.Xml;
-using AltController.Core;
-using AltController.Controls;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Controls;
+using AltControllerXP.Event;
 
-namespace AltController.Input
+namespace AltControllerXP.Input
 {
     /// <summary>
     /// Custom window input source

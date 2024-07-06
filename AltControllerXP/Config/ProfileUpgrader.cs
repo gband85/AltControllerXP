@@ -34,9 +34,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Xsl;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Upgrades profiles to the current version

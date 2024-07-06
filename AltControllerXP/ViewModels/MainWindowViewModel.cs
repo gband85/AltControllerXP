@@ -36,15 +36,15 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Threading;
 using System.Threading;
-using AltController.Core;
-using AltController.Config;
-using AltController.Event;
-using AltController.Input;
-using AltController.Sys;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
+using AltControllerXP.Sys;
 using Microsoft.Win32;
 //using System.Diagnostics;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Main application window

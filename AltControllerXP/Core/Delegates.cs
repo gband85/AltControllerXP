@@ -27,9 +27,9 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
-using AltController.Event;
+using AltControllerXP.Event;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     public delegate void DoubleValChangedEventHandler(object sender, DoubleValEventArgs args);
     public delegate void AltControlEventHandler(object sender, AltControlEventArgs args);

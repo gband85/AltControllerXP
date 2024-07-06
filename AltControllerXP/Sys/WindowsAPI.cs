@@ -30,7 +30,7 @@ using System;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace AltController.Sys
+namespace AltControllerXP.Sys
 {
     public delegate bool CallBackPtr(int hwnd, int lParam);
 

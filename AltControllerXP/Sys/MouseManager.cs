@@ -29,11 +29,11 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Collections.Generic;
 using System.IO;
-using AltController.Config;
-using AltController.Core;
-using AltController.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
 
-namespace AltController.Sys
+namespace AltControllerXP.Sys
 {
     /// <summary>
     /// Manages keyboard state

@@ -29,7 +29,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System.Xml;
 using System.Globalization;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Data to describe a custom button in a custom window 

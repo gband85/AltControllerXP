@@ -29,10 +29,10 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using AltController.Core;
-using AltController.Input;
+using AltControllerXP.Core;
+using AltControllerXP.Input;
 
-namespace AltControllerX.Views
+namespace AltControllerXP.Views
 {
     /// <summary>
     /// Edit input sources window

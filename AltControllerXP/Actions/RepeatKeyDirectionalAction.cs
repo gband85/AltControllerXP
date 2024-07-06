@@ -30,11 +30,11 @@ using System;
 using System.Globalization;
 using System.Xml;
 using System.Windows;
-using AltController.Core;
-using AltController.Event;
-using AltController.Input;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
 
-namespace AltController.Actions
+namespace AltControllerXP.Actions
 {
     /// <summary>
     /// Action for mapping pointer movements to key presses

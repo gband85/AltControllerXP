@@ -2,9 +2,9 @@
 using System.Windows.Data;
 using System.Windows.Forms;
 using System.Globalization;
-using AltController.Sys;
+using AltControllerXP.Sys;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     [ValueConversion(typeof(long), typeof(String))]
     public class HotkeyBindingConverter : IValueConverter

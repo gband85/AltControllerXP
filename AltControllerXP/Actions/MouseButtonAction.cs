@@ -28,11 +28,11 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
 using System.Xml;
-using AltController.Core;
-using AltController.Event;
-using AltController.Sys;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Sys;
 
-namespace AltController.Actions
+namespace AltControllerXP.Actions
 {
     /// <summary>
     /// Click, double-click, hold or release a mouse button

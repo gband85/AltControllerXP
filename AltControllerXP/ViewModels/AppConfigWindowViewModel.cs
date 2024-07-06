@@ -28,11 +28,11 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.IO;
 using System.Windows;
-using AltController.Config;
-using AltController.Core;
-using AltController.Sys;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Sys;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Personalised application options

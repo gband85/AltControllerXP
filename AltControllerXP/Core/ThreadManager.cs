@@ -29,10 +29,10 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System.Collections.Generic;
 using System.Threading;
 using System.Globalization;
-using AltController.Config;
-using AltController.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Manages the thread for polling input sources

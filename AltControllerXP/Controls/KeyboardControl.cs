@@ -28,12 +28,12 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
 //using System.Diagnostics;
-using AltController.Config;
-using AltController.Core;
-using AltController.Input;
-using AltController.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Input;
+using AltControllerXP.Event;
 
-namespace AltController.Controls
+namespace AltControllerXP.Controls
 {
     /// <summary>
     /// Monitors the state of keyboard keys

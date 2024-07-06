@@ -30,11 +30,11 @@ using System;
 using System.Collections.Generic;
 using System.Xml;
 using System.Reflection;
-using AltController.Actions;
-using AltController.Core;
-using AltController.Event;
+using AltControllerXP.Actions;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Container class for the list of actions to perform in a given logical state when a particular event occurs

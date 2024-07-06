@@ -30,7 +30,7 @@ using System;
 using System.ComponentModel;
 using System.Xml;
 
-namespace AltController.Core
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Stores an item with an ID and name

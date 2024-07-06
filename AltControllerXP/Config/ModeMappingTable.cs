@@ -27,9 +27,9 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Table defining the configuration of actions for a particular logical mode

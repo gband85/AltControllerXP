@@ -28,9 +28,9 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Xml;
 using System.Windows.Forms;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Actions
+namespace AltControllerXP.Actions
 {
     public abstract class BaseKeyAction : BaseAction
     {

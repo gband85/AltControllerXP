@@ -29,9 +29,9 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Globalization;
 using System.Xml;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.Event
+namespace AltControllerXP.Event
 {
     /// <summary>
     /// Event data provided by input controls

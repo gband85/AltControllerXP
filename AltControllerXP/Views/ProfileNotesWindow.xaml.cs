@@ -28,7 +28,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Windows;
 
-namespace AltControllerX.Views
+namespace AltControllerXP.Views
 {
     public ProfileNotesWindow()
     {

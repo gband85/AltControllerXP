@@ -29,9 +29,9 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Windows;
 using System.Windows.Input;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// About window

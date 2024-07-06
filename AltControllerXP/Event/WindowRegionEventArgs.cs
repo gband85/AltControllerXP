@@ -29,7 +29,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Windows;
 
-namespace AltController.Event
+namespace AltControllerXP.Event
 {
     /// <summary>
     /// Report a change in the screen rectangle of the current app

@@ -31,13 +31,13 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using AltController.Core;
-using AltController.Event;
-using AltController.Config;
-using AltController.Input;
-using AltController.Actions;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Input;
+using AltControllerXP.Actions;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Profile editor window

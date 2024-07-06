@@ -28,10 +28,10 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
 using System.Xml;
-using AltController.Core;
-using AltController.Event;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
 
-namespace AltController.Actions
+namespace AltControllerXP.Actions
 {
     /// <summary>
     /// Action for pressing a keyboard key, and possibly performing repeat presses

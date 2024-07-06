@@ -27,10 +27,10 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Windows;
-using AltController.Actions;
-using AltController.Core;
+using AltControllerXP.Actions;
+using AltControllerXP.Core;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     public partial class MoveThePointerControl : System.Windows.Controls.UserControl
     {

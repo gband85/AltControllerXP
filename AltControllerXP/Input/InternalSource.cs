@@ -28,11 +28,11 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System;
 using System.Diagnostics;
-using AltController.Core;
-using AltController.Config;
-using AltController.Sys;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Sys;
 
-namespace AltController.Input
+namespace AltControllerXP.Input
 {
     public class InternalSource : BaseSource
     {

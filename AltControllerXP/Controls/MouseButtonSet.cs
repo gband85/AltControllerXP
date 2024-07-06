@@ -29,13 +29,13 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System.Collections.Generic;
 //using System.Diagnostics;
 using System.Windows.Forms;
-using AltController.Config;
-using AltController.Core;
-using AltController.Input;
-using AltController.Event;
-using AltController.Sys;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Input;
+using AltControllerXP.Event;
+using AltControllerXP.Sys;
 
-namespace AltController.Controls
+namespace AltControllerXP.Controls
 {
     /// <summary>
     /// Monitors mouse button states

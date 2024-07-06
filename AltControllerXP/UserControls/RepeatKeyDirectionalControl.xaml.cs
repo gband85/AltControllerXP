@@ -30,10 +30,10 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using AltController.Core;
-using AltController.Actions;
+using AltControllerXP.Core;
+using AltControllerXP.Actions;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     public partial class RepeatKeyDirectionalControl : UserControl
     {

@@ -27,11 +27,11 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Collections.Generic;
-using AltController.Core;
-using AltController.Actions;
-using AltController.Input;
+using AltControllerXP.Core;
+using AltControllerXP.Actions;
+using AltControllerXP.Input;
 
-namespace AltController.Config
+namespace AltControllerXP.Config
 {
     /// <summary>
     /// Define the lists of actions to perform for each type of event

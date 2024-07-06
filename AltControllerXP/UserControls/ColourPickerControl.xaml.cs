@@ -33,9 +33,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Reflection;
-using AltController.Core;
+using AltControllerXP.Core;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     /// <summary>
     /// Colour picker control

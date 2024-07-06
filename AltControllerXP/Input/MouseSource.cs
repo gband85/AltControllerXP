@@ -29,13 +29,13 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Collections.Generic;
 using System.Windows;
-using AltController.Config;
-using AltController.Core;
-using AltController.Event;
-using AltController.Controls;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Controls;
 //using System.Diagnostics;
 
-namespace AltController.Input
+namespace AltControllerXP.Input
 {
     /// <summary>
     /// Represents a mouse, or equivalent pointing device

@@ -31,12 +31,12 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using AltController.Config;
-using AltController.Core;
-using AltController.Event;
-using AltController.Input;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
 
-namespace AltController.UserControls
+namespace AltControllerXP.UserControls
 {
     /// <summary>
     /// Interaction logic for ViewMouseControl.xaml

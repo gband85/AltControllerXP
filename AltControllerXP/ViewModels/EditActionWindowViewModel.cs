@@ -29,12 +29,12 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using AltController.Core;
-using AltController.Config;
-using AltController.Event;
-using AltController.Actions;
+using AltControllerXP.Core;
+using AltControllerXP.Config;
+using AltControllerXP.Event;
+using AltControllerXP.Actions;
 
-namespace AltController
+namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// Edit action window
