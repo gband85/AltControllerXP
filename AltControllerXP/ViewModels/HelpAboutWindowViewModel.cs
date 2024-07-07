@@ -30,69 +30,54 @@ using System;
 using System.Windows;
 using System.Windows.Input;
 using AltControllerXP.Core;
+using AltControllerXP.Interfaces;
+using AltControllerXP.Event;
+using Microsoft.Xaml.Behaviors.Core;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace AltControllerXP.ViewModels
 {
     /// <summary>
     /// About window
     /// </summary>
-    public partial class HelpAboutWindow : Window
+    public class HelpAboutWindowViewModel : IDialogRequestClose
     {
-        public HelpAboutWindow()
+        public string ApplicationNameText => Constants.ApplicationName;
+        public string VersionText => string.Format("{0} {1}", Properties.Resources.String_Version, Constants.AppVersion);
+        public string CopyrightText => string.Format("{0} 2024 {2}", Properties.Resources.String_Copyright, DateTime.Now.Year, Constants.AuthorName);
+        public string TranslatorNamesText => Constants.TranslatorNames;
+        public string AltControllerUri => "https://altcontroller.net";
+        public HelpAboutWindowViewModel()
         {
-            InitializeComponent();
+           // Message = message;
+            CloseCommand = new ActionCommand(p => CloseRequested?.Invoke(this, new DialogCloseRequestedEventArgs(true)));
         }
 
-        /// <summary>
-        /// Window loaded
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            this.VersionText.Text = string.Format("{0} {1}", Properties.Resources.String_Version, Constants.AppVersion);
-            this.CopyrightText.Text = string.Format("{0} 2013-{1} {2}", Properties.Resources.String_Copyright, DateTime.Now.Year, Constants.AuthorName);
-            this.TranslatorNamesText.Text = Constants.TranslatorNames;
-        }
+        public event EventHandler<DialogCloseRequestedEventArgs> CloseRequested;
+       // public string Message { get; }
+        public ICommand CloseCommand { get; }
+b
+        ///// <summary>
+        ///// Can Close command execute
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+        //private void CloseCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        //{
+        //    e.CanExecute = true;
+        //    e.Handled = true;
+        //}
 
-        /// <summary>
-        /// Can Close command execute
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CloseCanExecute(object sender, CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = true;
-            e.Handled = true;
-        }
-
-        /// <summary>
-        /// Close window
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CloseExecuted(object sender, ExecutedRoutedEventArgs e)
-        {
-            Close();
-            e.Handled = true;
-        }
-
-        /// <summary>
-        /// Hyperlink clicked
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(e.Uri.AbsoluteUri));
-            }
-            catch (Exception)
-            {
-            }
-            e.Handled = true;
-        }
-
+        ///// <summary>
+        ///// Close window
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+        //private void CloseExecuted(object sender, ExecutedRoutedEventArgs e)
+        //{
+        //    //Close();
+        //    e.Handled = true;
+        //}
     }
 }

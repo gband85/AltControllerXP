@@ -1,13 +1,11 @@
 ﻿<Window x:Class="AltControllerXP.Views.HelpAboutWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:p="clr-namespace:AltController.Properties"
-        Title="{x:Static p:Resources.About_Title}" Loaded="Window_Loaded" Icon="/AltController;component/Images/AltController.png" 
+        xmlns:p="clr-namespace:AltControllerXP.Properties"
+        xmlns:local="clr-namespace:AltControllerXP.Views"
+        Title="{x:Static p:Resources.About_Title}" Icon="/AltControllerXP;component/Assets/Images/AltController.png" 
         mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  ResizeMode="CanMinimize"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="420" Width="600">
-    <Window.CommandBindings>
-        <CommandBinding Command="Close" CanExecute="CloseCanExecute" Executed="CloseExecuted" />
-    </Window.CommandBindings>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -22,10 +20,12 @@
                             <ColumnDefinition Width="200"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Orientation="Vertical" Grid.Column="0">
-                            <TextBlock VerticalAlignment="Center" FontWeight="Bold">Alt Controller</TextBlock>
-                            <TextBlock Name="VersionText" VerticalAlignment="Center">Version</TextBlock>
-                            <TextBlock Name="CopyrightText" VerticalAlignment="Center">Copyright 2013-2021 Tim Brogden</TextBlock>
-                            <TextBlock VerticalAlignment="Center"><Hyperlink NavigateUri="https://altcontroller.net/" RequestNavigate="Hyperlink_RequestNavigate" Cursor="Hand">https://altcontroller.net</Hyperlink></TextBlock>
+                            <TextBlock VerticalAlignment="Center" FontWeight="Bold" Text="{Binding ApplicationNameText}"></TextBlock>
+                            <TextBlock Name="VersionText" VerticalAlignment="Center" Text="{Binding VersionText}"></TextBlock>
+                            <TextBlock Name="CopyrightText" VerticalAlignment="Center" Text="{Binding CopyrightText}"></TextBlock>
+                            <TextBlock VerticalAlignment="Center">
+                                <Hyperlink NavigateUri="https://altcontroller.net/" RequestNavigate="Hyperlink_RequestNavigate" Cursor="Hand">https://altcontroller.net</Hyperlink>
+                            </TextBlock>
                             <TextBlock Name="DescriptionLabel" Text="{x:Static p:Resources.About_DescriptionLabel}" VerticalAlignment="Center" FontWeight="Bold" Margin="0,10,0,0"></TextBlock>
                             <TextBlock TextWrapping="Wrap" Text="{x:Static p:Resources.About_ProgramDescription}"/>
                             <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" Text="{x:Static p:Resources.About_SpecialEffect}"/>
@@ -37,7 +37,7 @@
                             <Border BorderBrush="DarkGray" BorderThickness="1" Margin="10">
                                 <TextBlock>
                                 <Hyperlink NavigateUri="https://specialeffect.org.uk" RequestNavigate="Hyperlink_RequestNavigate" TextDecorations="None" Cursor="Hand" ToolTip="specialeffect.org.uk">
-                                    <Image Name="SpecialEffectImage" Width="180" Source="/AltController;component/Images/specialeffectlogo.jpg" Stretch="Uniform"/>
+                                    <Image Name="SpecialEffectImage" Width="180" Source="/AltControllerXP;component/Assets/Images/specialeffectlogo.jpg" Stretch="Uniform"/>
                                 </Hyperlink>
                                 </TextBlock>
                             </Border>
@@ -62,14 +62,14 @@
                         <TextBlock Name="CreditsText" TextWrapping="Wrap" Text="{x:Static p:Resources.About_CreditsText}"/>
                         <TextBlock Name="TranslatorsLabel" Margin="0,10,0,0" Text="{x:Static p:Resources.About_TranslatorsLabel}" FontWeight="Bold"></TextBlock>
                         <TextBlock Name="TranslatorsText" Text="{x:Static p:Resources.About_TranslatorsText}" />
-                        <TextBlock Name="TranslatorNamesText" TextWrapping="Wrap" Text=""/>
+                        <TextBlock Name="TranslatorNamesText" TextWrapping="Wrap" Text="{Binding TranslatorNamesText}"/>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <Button Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsCancel="True" MinWidth="70" Height="23" Margin="5" Command="Close">
+        <Button Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsCancel="True" MinWidth="70" Height="23" Margin="5" Command="{Binding CloseCommand}">
             <StackPanel Orientation="Horizontal">
-                <Image Source="/AltController;component/Images/icons/cross.png" />
+                <Image Source="/AltControllerXP;component/Assets/Images/icons/cross.png" />
                 <AccessText Margin="5,0" Text="{x:Static p:Resources.CloseButton}"/>
             </StackPanel>
         </Button>
