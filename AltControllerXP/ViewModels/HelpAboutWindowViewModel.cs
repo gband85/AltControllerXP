@@ -57,7 +57,7 @@ namespace AltControllerXP.ViewModels
         public event EventHandler<DialogCloseRequestedEventArgs> CloseRequested;
        // public string Message { get; }
         public ICommand CloseCommand { get; }
-b
+
         ///// <summary>
         ///// Can Close command execute
         ///// </summary>
