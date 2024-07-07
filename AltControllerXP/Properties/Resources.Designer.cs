@@ -88,7 +88,7 @@ namespace AltControllerXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alt Controller uses some free icons from the Silk icon set 1.3 by Mark James, which is available from www.famfamfam.com/lab/icons/silk/ and is licensed under the Creative Commons Attribution 2.5 License (http://creativecommons.org/licenses/by/2.5). The installer was packaged using NSIS (http://nsis.sourceforge.net)..
+        ///   Looks up a localized string similar to Alt Controller XP uses some free icons from the Silk icon set 1.3 by Mark James, which is available from www.famfamfam.com/lab/icons/silk/ and is licensed under the Creative Commons Attribution 2.5 License (http://creativecommons.org/licenses/by/2.5). The installer was packaged using NSIS (http://nsis.sourceforge.net)..
         /// </summary>
         public static string About_CreditsText {
             get {
@@ -124,7 +124,7 @@ namespace AltControllerXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alt Controller is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version..
+        ///   Looks up a localized string similar to Alt Controller XP is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version..
         /// </summary>
         public static string About_LicenceText1 {
             get {
@@ -133,7 +133,7 @@ namespace AltControllerXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alt Controller is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details..
+        ///   Looks up a localized string similar to Alt Controller XP is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details..
         /// </summary>
         public static string About_LicenceText2 {
             get {
@@ -142,7 +142,7 @@ namespace AltControllerXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should have received a copy of the GNU General Public License along with Alt Controller. If not, see http://www.gnu.org/licenses/..
+        ///   Looks up a localized string similar to You should have received a copy of the GNU General Public License along with Alt Controller XP. If not, see http://www.gnu.org/licenses/..
         /// </summary>
         public static string About_LicenceText3 {
             get {
@@ -151,7 +151,7 @@ namespace AltControllerXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A program to help make computer games more accessible. Alt Controller maps computer inputs, such as pointer movements and button presses, to actions, such as key presses..
+        ///   Looks up a localized string similar to Alt Controller XP is a cross-platform port of Alt Controller. Originally developed by Tim Brogden, Alt Controller is a program to help make computer games more accessible. It maps computer inputs, such as pointer movements and button presses, to actions, such as key presses..
         /// </summary>
         public static string About_ProgramDescription {
             get {
