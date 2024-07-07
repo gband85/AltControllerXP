@@ -17,7 +17,6 @@ namespace AltControllerXP
         {
             IDialogService dialogService = new DialogService(MainWindow);
 
-            dialogService.Register<DialogViewModel, DialogWindow>();
             dialogService.Register<HelpAboutWindowViewModel, HelpAboutWindow>();
 
             var viewModel = new MainWindowViewModel(dialogService);
