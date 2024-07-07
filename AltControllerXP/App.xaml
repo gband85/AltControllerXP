@@ -1,8 +1,7 @@
-﻿<Application x:Class="AltControllerXP.Views.App"
+﻿<Application x:Class="AltControllerXP.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AltControllerXP"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:AltControllerXP">
     <Application.Resources>
          
     </Application.Resources>
