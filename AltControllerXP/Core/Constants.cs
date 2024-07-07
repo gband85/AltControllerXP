@@ -35,16 +35,16 @@ namespace AltControllerXP.Core
     /// </summary>
     public class Constants
     {
-        public const string FileVersion = "1.97";    // Update this when the profile file format changes
-        public const string AppVersion = "1.97";    // Update this when the application version changes
+        public const string FileVersion = "1.00";    // Update this when the profile file format changes
+        public const string AppVersion = "1.00";    // Update this when the application version changes
         
         public const long LastUsedID = -4;
         public const long NextID = -3;
         public const long PreviousID = -2;
         public const long DefaultID = -1;
         public const long NoneID = 0;
-        public const string ApplicationName = "Alt Controller";
-        public const string AuthorName = "Tim Brogden";
+        public const string ApplicationName = "Alt Controller XP";
+        public const string AuthorName = "Garrett Anderson";
         public const string TranslatorNames = "Georg Niedermeier (DE)";
         public const string UserGuideURL = "https://altcontroller.net/docs/user-guide/";
         public const string MessageLogFileName = "Message Log.txt";
@@ -136,6 +136,6 @@ namespace AltControllerXP.Core
         public const bool DefaultIsGhostBackground = true;
         public const bool DefaultIsTopMost = true;
         public const int MinCustomButtonSize = 1;
-        public const EDisplayArea DefaultOverlayArea = EDisplayArea.PrimaryScreen;
+        //public const EDisplayArea DefaultOverlayArea = EDisplayArea.PrimaryScreen;
     }
 }
