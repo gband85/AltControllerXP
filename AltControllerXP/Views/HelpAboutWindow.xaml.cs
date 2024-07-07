@@ -26,9 +26,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
-using System;
 using System.Windows;
-using System.Windows.Input;
+using AltControllerXP.Interfaces;
 using AltControllerXP.Core;
 
 namespace AltControllerXP.Views
@@ -36,11 +35,29 @@ namespace AltControllerXP.Views
     /// <summary>
     /// About window
     /// </summary>
-    public partial class HelpAboutWindow : Window
+    public partial class HelpAboutWindow : Window, IDialog
     {
         public HelpAboutWindow()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Hyperlink clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            try
+            {
+                var utils = new Utils();
+                utils.OpenUrl(e.Uri.AbsoluteUri);
+            }
+            catch (Exception)
+            {
+            }
+            e.Handled = true;
         }
     }
 }
