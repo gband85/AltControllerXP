@@ -33,6 +33,7 @@ using System.Windows;
 using System.Windows.Controls;
 using AltControllerXP.Core;
 using AltControllerXP.Config;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {

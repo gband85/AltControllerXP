@@ -34,6 +34,7 @@ using System.Windows.Media.Imaging;
 using AltControllerXP.Config;
 using AltControllerXP.Event;
 using AltControllerXP.Input;
+using Size = System.Windows.Size;
 
 namespace AltControllerXP.Core
 {

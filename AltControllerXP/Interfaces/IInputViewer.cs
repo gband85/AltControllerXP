@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AltControllerXP.Event;
+using AltControllerXP.Input;
+using AltControllerXP.Core;
 
 namespace AltControllerXP.Interfaces
 {

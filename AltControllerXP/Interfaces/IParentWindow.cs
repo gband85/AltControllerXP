@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Windows;
+using AltControllerXP.Interfaces;
+using AltControllerXP.Event;
+using AltControllerXP.Config;
+using AltControllerXP.Core;
 
 namespace AltControllerXP.Interfaces
 {

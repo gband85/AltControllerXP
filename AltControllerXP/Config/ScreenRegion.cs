@@ -32,6 +32,7 @@ using System.Windows;
 using System.Windows.Media;
 using System.Xml;
 using AltControllerXP.Core;
+using Point = System.Windows.Point;
 
 namespace AltControllerXP.Config
 {

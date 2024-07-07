@@ -30,8 +30,11 @@ using System.Windows;
 
 namespace AltControllerXP.Views
 {
-    public ProfileNotesWindow()
+    public partial class ProfileNotesWindow : Window
     {
-        InitializeComponent();
-    }   
+        public ProfileNotesWindow()
+        {
+            InitializeComponent();
+        }
+    }
 }

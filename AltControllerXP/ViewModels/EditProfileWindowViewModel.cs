@@ -36,6 +36,8 @@ using AltControllerXP.Event;
 using AltControllerXP.Config;
 using AltControllerXP.Input;
 using AltControllerXP.Actions;
+using AltControllerXP.Interfaces;
+using RadioButton = System.Windows.Controls.RadioButton;
 
 namespace AltControllerXP.ViewModels
 {

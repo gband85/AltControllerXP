@@ -31,6 +31,7 @@ using AltControllerXP.Config;
 using AltControllerXP.Controls;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
+using AltControllerXP.Interfaces;
 
 namespace AltControllerXP.Input
 {

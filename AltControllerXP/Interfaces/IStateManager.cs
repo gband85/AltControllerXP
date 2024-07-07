@@ -6,8 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Windows;
+using AltControllerXP.Config;
+using AltControllerXP.Sys;
+using AltControllerXP.Event;
 
-namespace AltControllerXP.Interfaces
+namespace AltControllerXP.Core
 {
     /// <summary>
     /// Interface for state manager

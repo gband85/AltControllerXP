@@ -33,6 +33,7 @@ using AltControllerXP.Config;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
 using AltControllerXP.Controls;
+using Point = System.Windows.Point;
 //using System.Diagnostics;
 
 namespace AltControllerXP.Input

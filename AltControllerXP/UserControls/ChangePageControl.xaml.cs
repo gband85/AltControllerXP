@@ -30,6 +30,7 @@ using System.Windows;
 using System.Windows.Controls;
 using AltControllerXP.Core;
 using AltControllerXP.Actions;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {

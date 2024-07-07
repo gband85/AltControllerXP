@@ -33,6 +33,7 @@ using System.Reflection;
 using AltControllerXP.Actions;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
+using AltControllerXP.Interfaces;
 
 namespace AltControllerXP.Config
 {

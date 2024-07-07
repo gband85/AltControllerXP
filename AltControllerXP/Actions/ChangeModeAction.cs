@@ -29,6 +29,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System.Xml;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
+using AltControllerXP.Interfaces;
 
 namespace AltControllerXP.Actions
 {

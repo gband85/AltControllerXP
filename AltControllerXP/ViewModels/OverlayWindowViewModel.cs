@@ -34,6 +34,12 @@ using System.Windows.Shapes;
 using AltControllerXP.Core;
 using AltControllerXP.Config;
 using AltControllerXP.Event;
+using AltControllerXP.Interfaces;
+using Brushes = System.Windows.Media.Brushes;
+using Color = System.Windows.Media.Color;
+using ColorConverter = System.Windows.Media.ColorConverter;
+using Size = System.Windows.Size;
+using Point = System.Windows.Point;
 
 namespace AltControllerXP.ViewModels
 {

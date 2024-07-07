@@ -35,6 +35,8 @@ using AltControllerXP.Core;
 using AltControllerXP.Config;
 using AltControllerXP.Event;
 using System.Windows.Media.Imaging;
+using AltControllerXP.Interfaces;
+using Size = System.Windows.Size;
 
 namespace AltControllerXP.ViewModels
 {

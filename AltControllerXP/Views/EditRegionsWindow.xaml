@@ -1,9 +1,9 @@
 ﻿<Window x:Class="AltControllerXP.Views.EditRegionsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:p="clr-namespace:AltController.Properties"
-        xmlns:local="clr-namespace:AltController.UserControls" 
-        xmlns:ac="clr-namespace:AltController"
+        xmlns:p="clr-namespace:AltControllerXP.Properties"
+        xmlns:local="clr-namespace:AltControllerXP.UserControls" 
+        xmlns:ac="clr-namespace:AltControllerXP"
         Icon="/AltController;component/Images/AltController.png" 
         Title="{x:Static p:Resources.Regions_Title}" Height="600" Width="800" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged">
     <Window.CommandBindings>

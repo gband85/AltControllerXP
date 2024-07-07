@@ -29,6 +29,7 @@ along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 using System.Windows;
 using System.Windows.Controls;
 using AltControllerXP.Actions;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {

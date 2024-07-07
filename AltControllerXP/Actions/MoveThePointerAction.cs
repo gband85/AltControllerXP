@@ -32,6 +32,7 @@ using System.Windows;
 using System.Windows.Forms;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
+using Size = System.Windows.Size;
 
 namespace AltControllerXP.Actions
 {

@@ -35,6 +35,11 @@ using System.Data;
 using AltControllerXP.Actions;
 using AltControllerXP.Config;
 using AltControllerXP.Core;
+using AltControllerXP.Interfaces;
+using Brush = System.Windows.Media.Brush;
+using Brushes = System.Windows.Media.Brushes;
+using Panel = System.Windows.Controls.Panel;
+using HorizontalAlignment = System.Windows.HorizontalAlignment;
 
 namespace AltControllerXP.ViewModels
 {

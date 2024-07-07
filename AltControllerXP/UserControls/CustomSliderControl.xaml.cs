@@ -32,6 +32,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {

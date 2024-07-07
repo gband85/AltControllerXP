@@ -37,6 +37,7 @@ using AltControllerXP.Config;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
 using AltControllerXP.Input;
+using AltControllerXP.Interfaces;
 
 namespace AltControllerXP.ViewModels
 {

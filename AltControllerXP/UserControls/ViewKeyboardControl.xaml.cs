@@ -33,6 +33,11 @@ using System.Windows.Media;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
 using AltControllerXP.Input;
+using AltControllerXP.Interfaces;
+using Brush = System.Windows.Media.Brush;
+using Brushes = System.Windows.Media.Brushes;
+using Button = System.Windows.Controls.Button;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {

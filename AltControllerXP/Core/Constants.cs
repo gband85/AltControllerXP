@@ -136,6 +136,6 @@ namespace AltControllerXP.Core
         public const bool DefaultIsGhostBackground = true;
         public const bool DefaultIsTopMost = true;
         public const int MinCustomButtonSize = 1;
-        //public const EDisplayArea DefaultOverlayArea = EDisplayArea.PrimaryScreen;
+        public const EDisplayArea DefaultOverlayArea = EDisplayArea.PrimaryScreen;
     }
 }

@@ -31,6 +31,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
+using AltControllerXP.Interfaces;
 
 namespace AltControllerXP.Sys
 {

@@ -32,6 +32,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using AltControllerXP.Core;
 using AltControllerXP.Actions;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {

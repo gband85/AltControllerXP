@@ -35,6 +35,10 @@ using AltControllerXP.Config;
 using AltControllerXP.Core;
 using AltControllerXP.Event;
 using AltControllerXP.Input;
+using AltControllerXP.Interfaces;
+using Brushes = System.Windows.Media.Brushes;
+using Button = System.Windows.Controls.Button;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls
 {
@@ -49,17 +53,17 @@ namespace AltControllerXP.UserControls
         private ScreenRegionList _regionsList;
         private NamedItemList _regionsComboList = new NamedItemList();
         private AltControlEventArgs _currentSelection;
-        private Button _selectedButton = null;
+        private System.Windows.Controls.Button _selectedButton = null;
         private ScreenRegion _selectedRegion;
-        private Dictionary<Button, HighlightInfo> _buttonHighlighting = new Dictionary<Button, HighlightInfo>();
-        private Brush _defaultForegroundBrush;
+        private Dictionary<System.Windows.Controls.Button, HighlightInfo> _buttonHighlighting = new Dictionary<Button, HighlightInfo>();
+        private System.Windows.Media.Brush _defaultForegroundBrush;
         private FontWeight _defaultFontWeight;
-        private Brush _defaultBorderBrush;
+        private System.Windows.Media.Brush _defaultBorderBrush;
         private Thickness _defaultBorderThickness;
-        private Brush _selectedBrush;
-        private Brush _defaultsBrush;
-        private Brush _configuredBrush;
-        private Brush _noHighlightBrush;
+        private System.Windows.Media.Brush _selectedBrush;
+        private System.Windows.Media.Brush _defaultsBrush;
+        private System.Windows.Media.Brush _configuredBrush;
+        private System.Windows.Media.Brush _noHighlightBrush;
 
         public event AltControlEventHandler SelectionChanged;
 
