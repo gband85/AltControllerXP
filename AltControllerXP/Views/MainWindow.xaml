@@ -2,31 +2,13 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:p="clr-namespace:AltControllerXP.Properties"
-        xmlns:local="clr-namespace:AltControllerXP.UserControls"
+        xmlns:local="clr-namespace:AltControllerXP.Views"
         xmlns:ac="clr-namespace:AltControllerXP"
-        Title="Alt Controller XP" Loaded="Window_Loaded" Closing="Window_Closing" LocationChanged="Window_LocationChanged"
+        Title="Alt Controller XP"
         mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-        Icon="/AltController;component/Images/AltController.png" ResizeMode="CanMinimize" Height="270" Width="350">
-    <Window.CommandBindings>
-        <CommandBinding Command="New" CanExecute="NewCanExecute" Executed="NewExecuted" />
-        <CommandBinding Command="Open" CanExecute="OpenCanExecute" Executed="OpenExecuted" />
-        <CommandBinding Command="Save" CanExecute="SaveCanExecute" Executed="SaveExecuted" />
-        <CommandBinding Command="SaveAs" CanExecute="SaveAsCanExecute" Executed="SaveAsExecuted" />
-        <CommandBinding Command="Close" CanExecute="CloseCanExecute" Executed="CloseExecuted" />
-        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow1}" Executed="OpenCustomWindow_Executed"/>
-        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow2}" Executed="OpenCustomWindow_Executed"/>
-        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow3}" Executed="OpenCustomWindow_Executed"/>
-        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow4}" Executed="OpenCustomWindow_Executed"/>
-        <CommandBinding Command="{x:Static ac:MainWindow.OpenAllCustomWindows}" Executed="OpenAllCustomWindows_Executed"/>
-    </Window.CommandBindings>
-    <Window.InputBindings>
-        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow1}" Gesture="Ctrl+1"/>
-        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow2}" Gesture="Ctrl+2"/>
-        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow3}" Gesture="Ctrl+3"/>
-        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow4}" Gesture="Ctrl+4"/>
-        <KeyBinding Command="{x:Static ac:MainWindow.OpenAllCustomWindows}" Gesture="Ctrl+0"/>
-    </Window.InputBindings>
+        ResizeMode="CanMinimize" Height="270" Width="350"
+        Icon="/AltControllerXP;component/Assets/Images/AltController.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="23"/>
@@ -40,7 +22,7 @@
                 </ItemsPanelTemplate>
             </Menu.ItemsPanel>
             <MenuItem Name="FileMenu" Header="{x:Static p:Resources.Main_FileMenu}" >
-                <MenuItem Name="FileNew" Header="{x:Static p:Resources.Main_FileNew}" Command="ApplicationCommands.New">
+                <!--<MenuItem Name="FileNew" Header="{x:Static p:Resources.Main_FileNew}" Command="ApplicationCommands.New">
                     <MenuItem.Icon>
                         <Image Source="/AltController;component/Images/icons/page.png" />
                     </MenuItem.Icon>
@@ -78,10 +60,10 @@
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_FileCloseToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>
+                </MenuItem>-->
             </MenuItem>
             <MenuItem Name="EditMenu" Header="{x:Static p:Resources.Main_EditMenu}">
-                <MenuItem Name="EditProfile" Header="{x:Static p:Resources.Main_EditProfile}" Click="EditProfile_Click">
+                <!--<MenuItem Name="EditProfile" Header="{x:Static p:Resources.Main_EditProfile}" Click="EditProfile_Click">
                     <MenuItem.Icon>
                         <Image Source="/AltController;component/Images/icons/application_form_edit.png" />
                     </MenuItem.Icon>
@@ -96,10 +78,10 @@
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_EditScreenRegionsToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>
+                </MenuItem>-->
             </MenuItem>
             <MenuItem Name="ViewMenu" Header="{x:Static p:Resources.Main_ViewMenu}">
-                <MenuItem Name="ViewProfileSummary" Header="{x:Static p:Resources.Main_ViewProfileSummary}" Click="ViewProfileSummary_Click">
+                <!--<MenuItem Name="ViewProfileSummary" Header="{x:Static p:Resources.Main_ViewProfileSummary}" Click="ViewProfileSummary_Click">
                     <MenuItem.Icon>
                         <Image Source="/AltController;component/Images/icons/application_view_tile.png" />
                     </MenuItem.Icon>
@@ -135,28 +117,28 @@
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_ViewDrawStateOverlayToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>
+                </MenuItem>-->
             </MenuItem>
             <MenuItem Name="ToolsMenu" Header="{x:Static p:Resources.Main_ToolsMenu}">
-                <MenuItem Name="ToolsOptions" Header="{x:Static p:Resources.Main_ToolsOptions}" Click="ToolsOptions_Click">
+                <!--<MenuItem Name="ToolsOptions" Header="{x:Static p:Resources.Main_ToolsOptions}" Click="ToolsOptions_Click">
                     <MenuItem.Icon>
                         <Image Source="/AltController;component/Images/icons/user_edit.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_ToolsOptionsToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>
+                </MenuItem>-->
             </MenuItem>
-            <MenuItem Name="WindowMenu" Header="{x:Static p:Resources.Main_WindowMenu}" Visibility="Hidden">
+            <!--<MenuItem Name="WindowMenu" Header="{x:Static p:Resources.Main_WindowMenu}" Visibility="Hidden">
                 <Separator/>
                 <MenuItem Name="WindowShowTitleBars" IsCheckable="True" IsChecked="False" Header="{x:Static p:Resources.Main_WindowShowTitleBars}" Checked="WindowShowTitleBars_Changed" Unchecked="WindowShowTitleBars_Changed">
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_WindowShowTitleBarsToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
                 </MenuItem>
-            </MenuItem>
+            </MenuItem>-->
             <MenuItem Name="HelpMenu" Header="{x:Static p:Resources.Main_HelpMenu}" HorizontalAlignment="Right">
-                <MenuItem Name="HelpUserGuide" Header="{x:Static p:Resources.Main_HelpUserGuide}" Click="HelpUserGuide_Click">
+                <!--<MenuItem Name="HelpUserGuide" Header="{x:Static p:Resources.Main_HelpUserGuide}" Click="HelpUserGuide_Click">
                     <MenuItem.Icon>
                         <Image Source="/AltController;component/Images/icons/help.png" />
                     </MenuItem.Icon>
@@ -172,8 +154,8 @@
                         <ToolTip Content="{x:Static p:Resources.Main_HelpEventLogToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
                 </MenuItem>
-                <Separator/>
-                <MenuItem Name="HelpAbout" Header="{x:Static p:Resources.Main_HelpAbout}" Click="HelpAbout_Click">
+                <Separator/>-->
+                <MenuItem Name="HelpAbout" Header="{x:Static p:Resources.Main_HelpAbout}" Command="{Binding HelpAbout_ClickCommand}">
                     <MenuItem.Icon>
                         <Image Source="/AltController;component/Images/icons/information.png" />
                     </MenuItem.Icon>
@@ -207,12 +189,12 @@
                 <TextBlock VerticalAlignment="Center" Name="PageName" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <local:ErrorMessageControl x:Name="ErrorMessage" Grid.Row="2" VerticalAlignment="Bottom" Margin="5"/>
+        <!--<local:ErrorMessageControl x:Name="ErrorMessage" Grid.Row="2" VerticalAlignment="Bottom" Margin="5"/>-->
         <TextBlock x:Name="InfoMessage" Grid.Row="2" VerticalAlignment="Bottom" Margin="5" FontStyle="Italic" Visibility="Collapsed"/>
         <Grid Name="AboutPanel" VerticalAlignment="Bottom" Grid.Row="2" Margin="5">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <TextBlock Name="DevelopedForLabel" Text="{x:Static p:Resources.Main_DevelopedForLabel}" FontStyle="Italic"></TextBlock>
-                <Button Name="InfoButton" Margin="5,0" Content="{x:Static p:Resources.Main_InfoButton}" FontStyle="Italic" Foreground="Blue" Click="HelpAbout_Click">
+                <Button Name="InfoButton" Margin="5,0" Content="{x:Static p:Resources.Main_InfoButton}" FontStyle="Italic" Foreground="Blue">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <ContentPresenter />
