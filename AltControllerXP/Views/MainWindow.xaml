@@ -4,7 +4,7 @@
         xmlns:p="clr-namespace:AltControllerXP.Properties"
         xmlns:local="clr-namespace:AltControllerXP.UserControls"
         xmlns:ac="clr-namespace:AltControllerXP.Views"
-        Title="Alt Controller" Loaded="Window_Loaded" Closing="Window_Closing" LocationChanged="Window_LocationChanged"
+        Loaded="Window_Loaded" Closing="Window_Closing" LocationChanged="Window_LocationChanged"
         mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         Icon="/AltControllerXP;component/Assets/Images/AltController.png" ResizeMode="CanMinimize" Height="270" Width="350">
