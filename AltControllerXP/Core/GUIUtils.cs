@@ -34,6 +34,8 @@ using System.Windows.Media.Imaging;
 using AltControllerXP.Config;
 using AltControllerXP.Event;
 using AltControllerXP.Input;
+using Color = System.Windows.Media.Color;
+using ColorConverter = System.Windows.Media.ColorConverter;
 using Size = System.Windows.Size;
 
 namespace AltControllerXP.Core
