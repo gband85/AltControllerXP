@@ -2,13 +2,31 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:p="clr-namespace:AltControllerXP.Properties"
-        xmlns:local="clr-namespace:AltControllerXP.Views"
-        xmlns:ac="clr-namespace:AltControllerXP"
-        Title="Alt Controller XP"
+        xmlns:local="clr-namespace:AltControllerXP.UserControls"
+        xmlns:ac="clr-namespace:AltControllerXP.Views"
+        Title="Alt Controller" Loaded="Window_Loaded" Closing="Window_Closing" LocationChanged="Window_LocationChanged"
         mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-        ResizeMode="CanMinimize" Height="270" Width="350"
-        Icon="/AltControllerXP;component/Assets/Images/AltController.png">
+        Icon="/AltControllerXP;component/Assets/Images/AltController.png" ResizeMode="CanMinimize" Height="270" Width="350">
+    <Window.CommandBindings>
+        <CommandBinding Command="New" CanExecute="NewCanExecute" Executed="NewExecuted" />
+        <CommandBinding Command="Open" CanExecute="OpenCanExecute" Executed="OpenExecuted" />
+        <CommandBinding Command="Save" CanExecute="SaveCanExecute" Executed="SaveExecuted" />
+        <CommandBinding Command="SaveAs" CanExecute="SaveAsCanExecute" Executed="SaveAsExecuted" />
+        <CommandBinding Command="Close" CanExecute="CloseCanExecute" Executed="CloseExecuted" />
+        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow1}" Executed="OpenCustomWindow_Executed"/>
+        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow2}" Executed="OpenCustomWindow_Executed"/>
+        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow3}" Executed="OpenCustomWindow_Executed"/>
+        <CommandBinding Command="{x:Static ac:MainWindow.OpenCustomWindow4}" Executed="OpenCustomWindow_Executed"/>
+        <CommandBinding Command="{x:Static ac:MainWindow.OpenAllCustomWindows}" Executed="OpenAllCustomWindows_Executed"/>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow1}" Gesture="Ctrl+1"/>
+        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow2}" Gesture="Ctrl+2"/>
+        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow3}" Gesture="Ctrl+3"/>
+        <KeyBinding Command="{x:Static ac:MainWindow.OpenCustomWindow4}" Gesture="Ctrl+4"/>
+        <KeyBinding Command="{x:Static ac:MainWindow.OpenAllCustomWindows}" Gesture="Ctrl+0"/>
+    </Window.InputBindings>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="23"/>
@@ -22,9 +40,9 @@
                 </ItemsPanelTemplate>
             </Menu.ItemsPanel>
             <MenuItem Name="FileMenu" Header="{x:Static p:Resources.Main_FileMenu}" >
-                <!--<MenuItem Name="FileNew" Header="{x:Static p:Resources.Main_FileNew}" Command="ApplicationCommands.New">
+                <MenuItem Name="FileNew" Header="{x:Static p:Resources.Main_FileNew}" Command="ApplicationCommands.New">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/page.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/page.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_FileNewToolTip}"></ToolTip>
@@ -32,7 +50,7 @@
                 </MenuItem>
                 <MenuItem Name="FileOpen" Header="{x:Static p:Resources.Main_FileOpen}" Command="ApplicationCommands.Open">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/folder_page.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/folder_page.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_FileOpenToolTip}"></ToolTip>
@@ -41,7 +59,7 @@
                 <Separator/>
                 <MenuItem Name="FileSave" Header="{x:Static p:Resources.Main_FileSave}" Command="ApplicationCommands.Save">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/page_save.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/page_save.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_FileSaveToolTip}"></ToolTip>
@@ -55,17 +73,17 @@
                 <Separator/>
                 <MenuItem Name="FileClose" Header="{x:Static p:Resources.Main_FileClose}" Command="ApplicationCommands.Close">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/cross.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/cross.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_FileCloseToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>-->
+                </MenuItem>
             </MenuItem>
             <MenuItem Name="EditMenu" Header="{x:Static p:Resources.Main_EditMenu}">
-                <!--<MenuItem Name="EditProfile" Header="{x:Static p:Resources.Main_EditProfile}" Click="EditProfile_Click">
+                <MenuItem Name="EditProfile" Header="{x:Static p:Resources.Main_EditProfile}" Click="EditProfile_Click">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/application_form_edit.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/application_form_edit.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_EditProfileToolTip}"></ToolTip>
@@ -73,17 +91,17 @@
                 </MenuItem>
                 <MenuItem Name="EditScreenRegions" Header="{x:Static p:Resources.Main_EditScreenRegions}" Click="EditScreenRegions_Click">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/layout_edit.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/layout_edit.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_EditScreenRegionsToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>-->
+                </MenuItem>
             </MenuItem>
             <MenuItem Name="ViewMenu" Header="{x:Static p:Resources.Main_ViewMenu}">
-                <!--<MenuItem Name="ViewProfileSummary" Header="{x:Static p:Resources.Main_ViewProfileSummary}" Click="ViewProfileSummary_Click">
+                <MenuItem Name="ViewProfileSummary" Header="{x:Static p:Resources.Main_ViewProfileSummary}" Click="ViewProfileSummary_Click">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/application_view_tile.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/application_view_tile.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_ViewProfileSummaryToolTip}"></ToolTip>
@@ -91,7 +109,7 @@
                 </MenuItem>
                 <MenuItem Name="ViewProfileNotes" Header="{x:Static p:Resources.Main_ViewProfileNotes}" Click="ViewProfileNotes_Click">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/text_dropcaps.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/text_dropcaps.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_ViewProfileNotesToolTip}"></ToolTip>
@@ -117,30 +135,30 @@
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_ViewDrawStateOverlayToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>-->
+                </MenuItem>
             </MenuItem>
             <MenuItem Name="ToolsMenu" Header="{x:Static p:Resources.Main_ToolsMenu}">
-                <!--<MenuItem Name="ToolsOptions" Header="{x:Static p:Resources.Main_ToolsOptions}" Click="ToolsOptions_Click">
+                <MenuItem Name="ToolsOptions" Header="{x:Static p:Resources.Main_ToolsOptions}" Click="ToolsOptions_Click">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/user_edit.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/user_edit.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_ToolsOptionsToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
-                </MenuItem>-->
+                </MenuItem>
             </MenuItem>
-            <!--<MenuItem Name="WindowMenu" Header="{x:Static p:Resources.Main_WindowMenu}" Visibility="Hidden">
+            <MenuItem Name="WindowMenu" Header="{x:Static p:Resources.Main_WindowMenu}" Visibility="Hidden">
                 <Separator/>
                 <MenuItem Name="WindowShowTitleBars" IsCheckable="True" IsChecked="False" Header="{x:Static p:Resources.Main_WindowShowTitleBars}" Checked="WindowShowTitleBars_Changed" Unchecked="WindowShowTitleBars_Changed">
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_WindowShowTitleBarsToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
                 </MenuItem>
-            </MenuItem>-->
+            </MenuItem>
             <MenuItem Name="HelpMenu" Header="{x:Static p:Resources.Main_HelpMenu}" HorizontalAlignment="Right">
-                <!--<MenuItem Name="HelpUserGuide" Header="{x:Static p:Resources.Main_HelpUserGuide}" Click="HelpUserGuide_Click">
+                <MenuItem Name="HelpUserGuide" Header="{x:Static p:Resources.Main_HelpUserGuide}" Command="{Binding HelpUserGuideCommand}">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/help.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/help.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_HelpUserGuideToolTip}"></ToolTip>
@@ -148,16 +166,16 @@
                 </MenuItem>
                 <MenuItem Name="HelpEventLog" Header="{x:Static p:Resources.Main_HelpEventLog}" Click="HelpEventLog_Click">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/wrench.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/wrench.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_HelpEventLogToolTip}"></ToolTip>
                     </MenuItem.ToolTip>
                 </MenuItem>
-                <Separator/>-->
-                <MenuItem Name="HelpAbout" Header="{x:Static p:Resources.Main_HelpAbout}" Command="{Binding HelpAbout_ClickCommand}">
+                <Separator/>
+                <MenuItem Name="HelpAbout" Header="{x:Static p:Resources.Main_HelpAbout}" Command="{Binding HelpAboutCommand}">
                     <MenuItem.Icon>
-                        <Image Source="/AltController;component/Images/icons/information.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/information.png" />
                     </MenuItem.Icon>
                     <MenuItem.ToolTip>
                         <ToolTip Content="{x:Static p:Resources.Main_HelpAboutToolTip}"></ToolTip>
@@ -166,7 +184,7 @@
             </MenuItem>
         </Menu>
         <GroupBox Name="CurrentStateGroupBox" Grid.Row="1" Header="{x:Static p:Resources.Main_CurrentStateGroupBox}" Margin="5" VerticalAlignment="Top">
-            <Grid Margin="5">
+            <Grid Margin="5">                
                 <TextBlock VerticalAlignment="Center" Name="ProfileLabel" TextTrimming="CharacterEllipsis"/>
             </Grid>
         </GroupBox>
@@ -189,12 +207,12 @@
                 <TextBlock VerticalAlignment="Center" Name="PageName" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <!--<local:ErrorMessageControl x:Name="ErrorMessage" Grid.Row="2" VerticalAlignment="Bottom" Margin="5"/>-->
+        <local:ErrorMessageControl x:Name="ErrorMessage" Grid.Row="2" VerticalAlignment="Bottom" Margin="5"/>
         <TextBlock x:Name="InfoMessage" Grid.Row="2" VerticalAlignment="Bottom" Margin="5" FontStyle="Italic" Visibility="Collapsed"/>
         <Grid Name="AboutPanel" VerticalAlignment="Bottom" Grid.Row="2" Margin="5">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <TextBlock Name="DevelopedForLabel" Text="{x:Static p:Resources.Main_DevelopedForLabel}" FontStyle="Italic"></TextBlock>
-                <Button Name="InfoButton" Margin="5,0" Content="{x:Static p:Resources.Main_InfoButton}" FontStyle="Italic" Foreground="Blue">
+                <Button Name="InfoButton" Margin="5,0" Content="{x:Static p:Resources.Main_InfoButton}" FontStyle="Italic" Foreground="Blue" Command="{Binding HelpAboutCommand}">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <ContentPresenter />
@@ -205,4 +223,3 @@
         </Grid>
     </Grid>
 </Window>
-

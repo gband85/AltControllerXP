@@ -4,7 +4,10 @@
         xmlns:local="clr-namespace:AltControllerXP.UserControls"
         WindowStyle="None" AllowsTransparency="True" Background="{x:Null}" 
         Loaded="Window_Loaded" Closing="Window_Closing" LocationChanged="Window_LocationChanged"
-        Title="Custom Window" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="300" d:DesignWidth="300" SizeToContent="WidthAndHeight" Icon="/AltController;component/Images/AltController.png" Focusable="False">
+        Title="Custom Window" mc:Ignorable="d"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="300" d:DesignWidth="300"
+        SizeToContent="WidthAndHeight" Icon="/AltControllerXP;component/Assets/Images/AltController.png" Focusable="False">
     <Window.Resources>
         <LinearGradientBrush x:Key="TitleBarBrush" StartPoint="0.5,0" EndPoint="0.5,1">
             <GradientStop Color="#EEEEEE" Offset="0"/>
@@ -24,10 +27,10 @@
                     <TextBlock Name="TitleTextBlock" Grid.Column="0" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,2,10,2" Text="Title" TextTrimming="CharacterEllipsis" />
                     <StackPanel Name="ButtonsPanel" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                         <Button Name="MinimiseButton" Margin="2" Click="MinimiseButton_Click">
-                            <Image Source="/AltController;component/Images/minimise.png" Stretch="None" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/minimise.png" Stretch="None" />
                         </Button>
                         <Button Name="CloseButton" Margin="2" VerticalAlignment="Center" Command="ApplicationCommands.Close">
-                            <Image Source="/AltController;component/Images/icons/cancel.png" Stretch="None" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/cancel.png" Stretch="None" />
                         </Button>
                     </StackPanel>
                 </Grid>

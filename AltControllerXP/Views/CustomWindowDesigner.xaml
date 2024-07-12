@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:p="clr-namespace:AltControllerXP.Properties"
         xmlns:local="clr-namespace:AltControllerXP.UserControls"
-        Title="{x:Static p:Resources.Custom_Title}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Icon="/AltController;component/Images/AltController.png"
+        Title="{x:Static p:Resources.Custom_Title}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Icon="/AltControllerXP;component/Assets/Images/AltController.png"
         Loaded="Window_Loaded" Height="600" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -113,13 +113,13 @@
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1">
                             <Button Name="BrowseButtonImageButton" Height="23" VerticalAlignment="Center" Click="BrowseButtonImageButton_Click" ToolTip="{x:Static p:Resources.Custom_BrowseButtonImageToolTip}" IsEnabled="False">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="/AltController;component/Images/icons/image_edit.png" />
+                                    <Image Source="/AltControllerXP;component/Assets/Images/icons/image_edit.png" />
                                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Custom_BrowseButtonImageButton}"/>
                                 </StackPanel>
                             </Button>
                             <Button Name="ClearButtonImageButton" Height="23" Margin="5,0" VerticalAlignment="Center" Click="ClearButtonImageButton_Click" ToolTip="{x:Static p:Resources.Custom_ClearButtonImageToolTip}" IsEnabled="False">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="/AltController;component/Images/icons/image_delete.png" />
+                                    <Image Source="/AltControllerXP;component/Assets/Images/icons/image_delete.png" />
                                 </StackPanel>
                             </Button>
                         </StackPanel>
@@ -133,13 +133,13 @@
         <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,0,5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <Button Height="23" Name="AddButton" HorizontalAlignment="Left" MinWidth="70" Margin="5,0" Click="AddButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/add.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/add.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Custom_AddButton}"/>
                 </StackPanel>
             </Button>
             <Button Height="23" Name="DeleteButton" HorizontalAlignment="Left" MinWidth="70" IsEnabled="False" Click="DeleteButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/delete.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/delete.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Custom_DeleteButton}"/>
                 </StackPanel>
             </Button>
@@ -147,13 +147,13 @@
         <StackPanel Grid.Row="2" Grid.Column="1" Margin="0,0,0,5" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
             <Button Height="23" Name="OKButton" HorizontalAlignment="Left" MinWidth="70" Click="OKButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/accept.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/accept.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.OKButton}"/>
                 </StackPanel>
             </Button>
             <Button Height="23" Name="CancelButton" IsCancel="True" HorizontalAlignment="Left" MinWidth="70" Margin="5,0" Click="CancelButton_Click" Style="{DynamicResource ButtonStyle1}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/cancel.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/cancel.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.CancelButton}"/>
                 </StackPanel>
             </Button>

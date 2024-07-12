@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AltControllerXP.UserControls" 
         ResizeMode="CanMinimize" Title="{x:Static p:Resources.Options_Title}" 
         mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-        Loaded="Window_Loaded" Icon="/AltController;component/Images/AltController.png" Height="390" Width="550">
+        Loaded="Window_Loaded" Icon="/AltControllerXP;component/Assets/Images/AltController.png" Height="390" Width="550">
     <Window.Resources>
         <core:HotkeyBindingConverter x:Key="HotkeyConverter"/>
     </Window.Resources>
@@ -168,7 +168,7 @@
                     <TextBox Name="ProfilesFolderTextBox" Grid.Row="1" VerticalAlignment="Center"></TextBox>
                     <Button Name="BrowseButton" Grid.Row="2" Click="BrowseButton_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Height="23">
                         <StackPanel Orientation="Horizontal" ToolTip="{x:Static p:Resources.Options_BrowseToolTip}">
-                            <Image Source="/AltController;component/Images/icons/image_edit.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/image_edit.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Options_BrowseButton}"/>
                         </StackPanel>
                     </Button>
@@ -178,7 +178,7 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5" VerticalAlignment="Bottom" HorizontalAlignment="Left">
             <Button Name="ResetButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Click="ResetButton_Click" ToolTip="{x:Static p:Resources.Options_ResetToolTip}">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/lightning.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/lightning.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Options_ResetButton}"/>
                 </StackPanel>
             </Button>
@@ -186,13 +186,13 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5" VerticalAlignment="Bottom" HorizontalAlignment="Right">
             <Button Name="OKButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="OKButton_Click" >
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/accept.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/accept.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.OKButton}"/>
                 </StackPanel>
             </Button>
             <Button Name="CancelButton" HorizontalAlignment="Left" MinWidth="70" Height="23" IsCancel="True" Click="CancelButton_Click" >
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/cancel.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/cancel.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.CancelButton}"/>
                 </StackPanel>
             </Button>

@@ -4,7 +4,7 @@
         xmlns:p="clr-namespace:AltControllerXP.Properties"
         xmlns:local="clr-namespace:AltControllerXP.UserControls" 
         ResizeMode="CanMinimize" Title="{x:Static p:Resources.Situations_Title}" 
-        Icon="/AltController;component/Images/AltController.png" Loaded="Window_Loaded" mc:Ignorable="d" 
+        Icon="/AltControllerXP;component/Assets/Images/AltController.png" Loaded="Window_Loaded" mc:Ignorable="d" 
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         Height="355" Width="620">
     <Grid Margin="5">
@@ -64,13 +64,13 @@
                         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
                             <Button Name="AddAppButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="AddAppButton_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="/AltController;component/Images/icons/add.png" />
+                                    <Image Source="/AltControllerXP;component/Assets/Images/icons/add.png" />
                                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Situations_AddAppButton}"/>
                                 </StackPanel>
                             </Button>
                             <Button Name="DeleteAppButton" HorizontalAlignment="Left" MinWidth="70" IsEnabled="False" Height="23" Click="DeleteAppButton_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="/AltController;component/Images/icons/delete.png" />
+                                    <Image Source="/AltControllerXP;component/Assets/Images/icons/delete.png" />
                                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Situations_DeleteAppButton}"/>
                                 </StackPanel>
                             </Button>
@@ -92,7 +92,7 @@
                             <ComboBox Name="AppCombo" DisplayMemberPath="Name" SelectedValuePath="ID" Grid.Row="0" Grid.Column="1" SelectionChanged="AppCombo_SelectionChanged" />
                             <Button Name="RefreshButton" Grid.Column="2" HorizontalAlignment="Right" Click="RefreshButton_Click" ToolTip="{x:Static p:Resources.Situations_RefreshButton}">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="/AltController;component/Images/icons/arrow_refresh.png" Stretch="None" />
+                                    <Image Source="/AltControllerXP;component/Assets/Images/icons/arrow_refresh.png" Stretch="None" />
                                 </StackPanel>
                             </Button>
                             <CheckBox Name="SnoozeCheckbox" Content="{x:Static p:Resources.Situations_SnoozeLabel}" ToolTip="{x:Static p:Resources.Situations_SnoozeToolTip}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Checked="SnoozeCheckbox_Changed" Unchecked="SnoozeCheckbox_Changed"></CheckBox>
@@ -133,13 +133,13 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
             <Button Name="OKButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="5,0" Click="OKButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/accept.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/accept.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.OKButton}"/>
                 </StackPanel>
             </Button>
             <Button Name="CancelButton" HorizontalAlignment="Left" MinWidth="70" Height="23" IsCancel="True" Click="CancelButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/cancel.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/cancel.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.CancelButton}"/>
                 </StackPanel>
             </Button>

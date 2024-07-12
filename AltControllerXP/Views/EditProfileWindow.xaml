@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:p="clr-namespace:AltControllerXP.Properties"
         xmlns:local="clr-namespace:AltControllerXP.UserControls"
-        xmlns:ac="clr-namespace:AltControllerXP"
+        xmlns:ac="clr-namespace:AltControllerXP.Views"
         Title="{x:Static p:Resources.Profile_Title}" Loaded="Window_Loaded" Closing="Window_Closing" mc:Ignorable="d" 
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="/AltController;component/Images/AltController.png" Height="680" Width="800">
+        Icon="/AltControllerXP;component/Assets/Images/AltController.png" Height="680" Width="800">
     <Window.CommandBindings>
         <CommandBinding Command="{x:Static ac:EditProfileWindow.PreviousCommand}" CanExecute="PreviousCommand_CanExecute" Executed="PreviousCommand_Executed" />
         <CommandBinding Command="{x:Static ac:EditProfileWindow.NextCommand}" CanExecute="NextCommand_CanExecute" Executed="NextCommand_Executed" />
@@ -35,7 +35,7 @@
                 <StackPanel Orientation="Horizontal" Height="25" HorizontalAlignment="Right" VerticalAlignment="Top">
                     <Button Name="EditSituations" Click="EditSituations_Click">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/application_form_edit.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/application_form_edit.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Profile_EditSituations}"/>
                         </StackPanel>
                     </Button>
@@ -53,20 +53,20 @@
                     <ComboBox Grid.Row="1" Grid.Column="1" Margin="5,0" Name="InputCombo" DisplayMemberPath="Name" SelectedValuePath="ID" HorizontalAlignment="Left" Width="150" SelectionChanged="InputCombo_SelectionChanged" ></ComboBox>
                     <Button Name="EditInputs" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Click="EditInputs_Click">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/application_form_edit.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/application_form_edit.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Profile_EditInputs}"/>
                         </StackPanel>
                     </Button>
                     <Button Name="DesignButton" IsEnabled="False" Margin="5,0" Click="DesignButton_Click">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/application_view_tile.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/application_view_tile.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Profile_DesignButton}"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>
                 <Button Name="EditRegionsButton" Margin="5" HorizontalAlignment="Right" Click="EditRegionsButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/AltController;component/Images/icons/application_form_edit.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/application_form_edit.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.Profile_EditRegionsButton}"/>
                     </StackPanel>
                 </Button>
@@ -111,13 +111,13 @@
                     <StackPanel Name="NavigationButtonsPanel" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,30,0">
                         <Button Name="PreviousActionListButton" IsEnabled="False" ToolTip="{x:Static p:Resources.Profile_PreviousActionListButton}"  Command="{x:Static ac:EditProfileWindow.PreviousCommand}">
                             <StackPanel Orientation="Horizontal">
-                                <Image Source="/AltController;component/Images/icons/control_rewind_blue.png" Stretch="None" />
+                                <Image Source="/AltControllerXP;component/Assets/Images/icons/control_rewind_blue.png" Stretch="None" />
                             </StackPanel>
                         </Button>
                         <TextBlock Name="NavigateActionListsTextBlock" Text="{x:Static p:Resources.Profile_NavigateActionListsTextBlock}" VerticalAlignment="Center" Margin="5,0"></TextBlock>
                         <Button Name="NextActionListButton" IsEnabled="False" ToolTip="{x:Static p:Resources.Profile_NextActionListButton}" Command="{x:Static ac:EditProfileWindow.NextCommand}">
                             <StackPanel Orientation="Horizontal">
-                                <Image Source="/AltController;component/Images/icons/control_fastforward_blue.png" Stretch="None" />
+                                <Image Source="/AltControllerXP;component/Assets/Images/icons/control_fastforward_blue.png" Stretch="None" />
                             </StackPanel>
                         </Button>
                     </StackPanel>
@@ -128,7 +128,7 @@
             <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Bottom">
                 <Button Name="PreviewButton" Height="23" Click="PreviewButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/AltController;component/Images/icons/application_view_tile.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/application_view_tile.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.Profile_PreviewButton}"/>
                     </StackPanel>
                 </Button>
@@ -137,19 +137,19 @@
             <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                 <Button Name="OKButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="OKButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/AltController;component/Images/icons/accept.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/accept.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.OKButton}"/>
                     </StackPanel>
                 </Button>
                 <Button Name="ApplyButton" IsEnabled="False" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="ApplyButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/AltController;component/Images/icons/tick.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/tick.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.Profile_ApplyButton}"/>
                     </StackPanel>
                 </Button>
                 <Button Name="CancelButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Click="CancelButton_Click">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="/AltController;component/Images/icons/cancel.png" />
+                        <Image Source="/AltControllerXP;component/Assets/Images/icons/cancel.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.CancelButton}"/>
                     </StackPanel>
                 </Button>

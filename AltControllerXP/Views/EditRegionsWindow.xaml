@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:p="clr-namespace:AltControllerXP.Properties"
         xmlns:local="clr-namespace:AltControllerXP.UserControls" 
-        xmlns:ac="clr-namespace:AltControllerXP"
-        Icon="/AltController;component/Images/AltController.png" 
+        xmlns:ac="clr-namespace:AltControllerXP.Views"
+        Icon="/AltControllerXP;component/Assets/Images/AltController.png" 
         Title="{x:Static p:Resources.Regions_Title}" Height="600" Width="800" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged">
     <Window.CommandBindings>
         <CommandBinding Command="{x:Static ac:EditRegionsWindow.PreviousCommand}" CanExecute="NavigateCommand_CanExecute" Executed="PreviousCommand_Executed" />
@@ -46,13 +46,13 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                     <Button Name="AddRegionButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Click="AddRegionButton_Click">
                         <StackPanel Orientation="Horizontal" ToolTip="{x:Static p:Resources.Regions_AddRegionButtonToolTip}">
-                            <Image Source="/AltController;component/Images/icons/add.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/add.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Regions_AddRegionButton}"/>
                         </StackPanel>
                     </Button>
                     <Button Name="DeleteRegionButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="5,0" IsEnabled="False" Click="DeleteRegionButton_Click">
                         <StackPanel Orientation="Horizontal" ToolTip="{x:Static p:Resources.Regions_DeleteRegionButtonToolTip}">
-                            <Image Source="/AltController;component/Images/icons/delete.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/delete.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Regions_DeleteRegionButton}"/>
                         </StackPanel>
                     </Button>
@@ -60,13 +60,13 @@
                 <StackPanel Name="NavigationButtonsPanel" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                     <Button Name="PreviousButton" Height="23" IsEnabled="False" ToolTip="{x:Static p:Resources.Regions_PreviousButton}" Command="{x:Static ac:EditRegionsWindow.PreviousCommand}">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/control_rewind_blue.png" Stretch="None" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/control_rewind_blue.png" Stretch="None" />
                         </StackPanel>
                     </Button>
                     <TextBlock Name="NavigateTextBlock" Text="{x:Static p:Resources.Regions_NavigateTextBlock}" VerticalAlignment="Center" Margin="5,0"></TextBlock>
                     <Button Name="NextButton" Height="23" IsEnabled="False" ToolTip="{x:Static p:Resources.Regions_NextButton}" Command="{x:Static ac:EditRegionsWindow.NextCommand}">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/control_fastforward_blue.png" Stretch="None" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/control_fastforward_blue.png" Stretch="None" />
                         </StackPanel>
                     </Button>
                 </StackPanel>
@@ -123,13 +123,13 @@
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="12" Grid.Column="1">
                     <Button Name="BrowseRegionImageButton" Height="23" Click="BrowseRegionImageButton_Click" ToolTip="{x:Static p:Resources.Regions_BrowseRegionImageToolTip}" IsEnabled="False">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/image_edit.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/image_edit.png" />
                             <AccessText Margin="5,0" Text="{x:Static p:Resources.Regions_BrowseRegionImageButton}"/>
                         </StackPanel>
                     </Button>
                     <Button Name="ClearRegionImageButton" Height="23" Margin="5,0" Click="ClearRegionImageButton_Click" ToolTip="{x:Static p:Resources.Regions_ClearRegionImageToolTip}" IsEnabled="False">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/AltController;component/Images/icons/image_delete.png" />
+                            <Image Source="/AltControllerXP;component/Assets/Images/icons/image_delete.png" />
                         </StackPanel>
                     </Button>
                 </StackPanel>
@@ -147,26 +147,26 @@
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <Button Name="BrowseScreenshotButton" Click="BrowseScreenshotButton_Click" Height="23">
                 <StackPanel Orientation="Horizontal" ToolTip="{x:Static p:Resources.Regions_BrowseScreenshotToolTip}">
-                    <Image Source="/AltController;component/Images/icons/image_edit.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/image_edit.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Regions_BrowseScreenshotButton}"/>
                 </StackPanel>
             </Button>
             <Button Name="ClearScreenshotButton" Height="23" Margin="5,0" Click="ClearScreenshotButton_Click">
                 <StackPanel Orientation="Horizontal" ToolTip="{x:Static p:Resources.Regions_ClearScreenshotToolTip}">
-                    <Image Source="/AltController;component/Images/icons/image_delete.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/image_delete.png" />
                 </StackPanel>
             </Button>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
             <Button Name="OKButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="OKButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/accept.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/accept.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.OKButton}"/>
                 </StackPanel>
             </Button>
             <Button Name="CancelButton" HorizontalAlignment="Left" MinWidth="70" Height="23" IsCancel="True" Click="CancelButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/cancel.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/cancel.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.CancelButton}"/>
                 </StackPanel>
             </Button>

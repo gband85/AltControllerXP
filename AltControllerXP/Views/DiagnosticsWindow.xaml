@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:p="clr-namespace:AltControllerXP.Properties"
         Title="{x:Static p:Resources.Log_Title}" Height="450" Width="550" 
-        Icon="/AltController;component/Images/AltController.png" Closing="Window_Closing">
+        Icon="/AltControllerXP;component/Assets/Images/AltController.png" Closing="Window_Closing">
     <Window.CommandBindings>
         <CommandBinding Command="Close" CanExecute="CloseCanExecute" Executed="CloseExecuted" />
     </Window.CommandBindings>
@@ -20,13 +20,13 @@
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0">
             <Button Name="StartButton" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="StartButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/control_play_blue.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/control_play_blue.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Log_StartButton}"/>
                 </StackPanel>
             </Button>
             <Button Name="StopButton" HorizontalAlignment="Left" MinWidth="70" Height="23" IsEnabled="False" Click="StopButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/control_stop_blue.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/control_stop_blue.png" />
                     <AccessText Margin="5,0" Text="{x:Static p:Resources.Log_StopButton}"/>
                 </StackPanel>
             </Button>
@@ -39,13 +39,13 @@
             <StackPanel Grid.Column="0" Orientation="Horizontal">
                 <Button Name="SaveButton" IsEnabled="False" HorizontalAlignment="Left" MinWidth="70" Height="23" Margin="0,0,5,0" Click="SaveButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/disk.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/disk.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.Log_SaveButton}"/>
                 </StackPanel>
             </Button>
                 <Button Name="ClearButton" IsEnabled="False" HorizontalAlignment="Left" MinWidth="70" Height="23" Click="ClearButton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/AltController;component/Images/icons/table_lightning.png" />
+                    <Image Source="/AltControllerXP;component/Assets/Images/icons/table_lightning.png" />
                         <AccessText Margin="5,0" Text="{x:Static p:Resources.Log_ClearButton}"/>
                     </StackPanel>
             </Button>
@@ -57,7 +57,7 @@
         </Grid>
         <Button Name="CloseButton" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="70" Height="23" Command="Close">
             <StackPanel Orientation="Horizontal">
-                <Image Source="/AltController;component/Images/icons/cross.png" />
+                <Image Source="/AltControllerXP;component/Assets/Images/icons/cross.png" />
                 <AccessText Margin="5,0" Text="{x:Static p:Resources.CloseButton}"/>
             </StackPanel>
         </Button>
