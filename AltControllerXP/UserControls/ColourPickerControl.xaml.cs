@@ -34,6 +34,8 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Reflection;
 using AltControllerXP.Core;
+using Color = System.Windows.Media.Color;
+using ColorConverter = System.Windows.Media.ColorConverter;
 using UserControl = System.Windows.Controls.UserControl;
 
 namespace AltControllerXP.UserControls

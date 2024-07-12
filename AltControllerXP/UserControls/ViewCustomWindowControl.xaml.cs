@@ -41,10 +41,17 @@ using Brush = System.Windows.Media.Brush;
 using Brushes = System.Windows.Media.Brushes;
 using Button = System.Windows.Controls.Button;
 using Cursors = System.Windows.Input.Cursors;
+using DataObject = System.Windows.DataObject;
+using DragDropEffects = System.Windows.DragDropEffects;
 using Point = System.Windows.Point;
 using UserControl = System.Windows.Controls.UserControl;
 using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using DragEventArgs = System.Windows.DragEventArgs;
+using DragEventHandler = System.Windows.DragEventHandler;
+using FontFamily = System.Windows.Media.FontFamily;
+using MouseEventHandler = System.Windows.Input.MouseEventHandler;
+using SystemColors = System.Windows.SystemColors;
+using SystemFonts = System.Windows.SystemFonts;
 
 namespace AltControllerXP.UserControls
 {

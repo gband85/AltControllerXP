@@ -39,11 +39,14 @@ using AltControllerXP.Core;
 using Brush = System.Windows.Media.Brush;
 using Brushes = System.Windows.Media.Brushes;
 using Cursors = System.Windows.Input.Cursors;
+using DataObject = System.Windows.DataObject;
+using DragDropEffects = System.Windows.DragDropEffects;
 using Point = System.Windows.Point;
 using Rectangle = System.Windows.Shapes.Rectangle;
 using UserControl = System.Windows.Controls.UserControl;
 using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using DragEventArgs = System.Windows.DragEventArgs;
+using DragEventHandler = System.Windows.DragEventHandler;
 
 namespace AltControllerXP.UserControls
 {

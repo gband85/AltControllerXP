@@ -33,6 +33,7 @@ using System.Windows.Media;
 using AltControllerXP.Core;
 using AltControllerXP.Actions;
 using UserControl = System.Windows.Controls.UserControl;
+using Point = System.Windows.Point;
 
 namespace AltControllerXP.UserControls
 {
