@@ -30,11 +30,66 @@ using System.Windows;
 
 namespace AltControllerXP.Views
 {
+    /// <summary>
+    /// Window that shows a notes for the current profile
+    /// </summary>
     public partial class ProfileNotesWindow : Window
     {
+        // Members
+        private string _profileNotes = "";
+
+        // Properties
+        public string ProfileNotes { get { return _profileNotes; } set { _profileNotes = value; UpdateDisplay(); } }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public ProfileNotesWindow()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Window loaded
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateDisplay();
+        }
+
+        /// <summary>
+        /// Display the profile notes text
+        /// </summary>
+        private void UpdateDisplay()
+        {
+            if (this.IsLoaded)
+            {
+                ProfileNotesText.Text = _profileNotes; 
+            }
+        }
+
+        /// <summary>
+        /// OK button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OKButton_Click(object sender, RoutedEventArgs e)
+        {
+            _profileNotes = this.ProfileNotesText.Text;
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        /// <summary>
+        /// Cancel button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

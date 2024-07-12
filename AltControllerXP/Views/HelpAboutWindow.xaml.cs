@@ -27,6 +27,7 @@ You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
 using System.Windows;
+using System.Windows.Input;
 using AltControllerXP.Interfaces;
 using AltControllerXP.Core;
 
@@ -41,18 +42,51 @@ namespace AltControllerXP.Views
         {
             InitializeComponent();
         }
+        
+        /// <summary>
+        /// Window loaded
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.VersionText.Text = string.Format("{0} {1}", Properties.Resources.String_Version, Constants.AppVersion);
+            this.CopyrightText.Text = string.Format("{0} 2013-{1} {2}", Properties.Resources.String_Copyright, DateTime.Now.Year, Constants.AuthorName);
+            this.TranslatorNamesText.Text = Constants.TranslatorNames;
+        }
+
+        /// <summary>
+        /// Can Close command execute
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CloseCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+            e.Handled = true;
+        }
+
+        /// <summary>
+        /// Close window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CloseExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            Close();
+            e.Handled = true;
+        }
 
         /// <summary>
         /// Hyperlink clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
             try
             {
-                var utils = new Utils();
-                utils.OpenUrl(e.Uri.AbsoluteUri);
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(e.Uri.AbsoluteUri));
             }
             catch (Exception)
             {

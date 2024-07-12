@@ -26,70 +26,22 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Alt Controller.  If not, see <http://www.gnu.org/licenses/>.
 */
+using System;
 using System.Windows;
+using System.Windows.Input;
+using AltControllerXP.Core;
+using AltControllerXP.Interfaces;
+using AltControllerXP.Event;
+using Microsoft.Xaml.Behaviors.Core;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace AltControllerXP.ViewModels
 {
     /// <summary>
-    /// Window that shows a notes for the current profile
+    /// About window
     /// </summary>
-    public partial class ProfileNotesWindow : Window
+    public partial class ProfileNotesWindowViewModel
     {
-        // Members
-        private string _profileNotes = "";
-
-        // Properties
-        public string ProfileNotes { get { return _profileNotes; } set { _profileNotes = value; UpdateDisplay(); } }
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public ProfileNotesWindow()
-        {
-            InitializeComponent();
-        }
-
-        /// <summary>
-        /// Window loaded
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            UpdateDisplay();
-        }
-
-        /// <summary>
-        /// Display the profile notes text
-        /// </summary>
-        private void UpdateDisplay()
-        {
-            if (this.IsLoaded)
-            {
-                ProfileNotesText.Text = _profileNotes; 
-            }
-        }
-
-        /// <summary>
-        /// OK button
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OKButton_Click(object sender, RoutedEventArgs e)
-        {
-            _profileNotes = this.ProfileNotesText.Text;
-            this.DialogResult = true;
-            this.Close();
-        }
-
-        /// <summary>
-        /// Cancel button
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void CancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
     }
 }
