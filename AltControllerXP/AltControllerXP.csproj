@@ -18,8 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.de-DE.resx"/>
-    <EmbeddedResource Include="Properties\Resources.en-US.resx"/>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
