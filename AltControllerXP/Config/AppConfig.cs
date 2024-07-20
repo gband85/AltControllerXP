@@ -33,6 +33,7 @@ using System.Xml;
 using System.IO;
 using System.Text;
 using AltControllerXP.Core;
+using System.Reflection;
 
 namespace AltControllerXP.Config
 {
@@ -53,21 +54,15 @@ namespace AltControllerXP.Config
             {
                 if (_baseDir == null)
                 {
-                    string exeDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                    if (exeDir.EndsWith("Debug") || exeDir.EndsWith("Release"))
+                    string appName = Assembly.GetExecutingAssembly().GetName().Name;
+                    var dir = new DirectoryInfo(Environment.CurrentDirectory);
+                    while (dir.Name != appName)
                     {
-                        // Dev environment
-                        _baseDir = Path.Combine(exeDir, "..", "..");
-                        DirectoryInfo di = new DirectoryInfo(_baseDir);
-                        _baseDir = di.FullName;
+                        dir = Directory.GetParent(dir.FullName);
                     }
-                    else
-                    {
-                        // Installed
-                        _baseDir = exeDir;
-                    }
+                    _baseDir = dir.FullName;
                 }
-
+                
                 return _baseDir;
             }
         }
